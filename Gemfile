@@ -27,7 +27,7 @@ gem 'sequel', '~> 4.36'
 gem 'devise'
 gem 'sqlite3'
 
-
+gem 'coffee-rails', '~> 5.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
