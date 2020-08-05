@@ -20,20 +20,23 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt', '~> 3.1', '>= 3.1.15'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+gem 'sequel', '~> 4.36'
+gem 'devise'
+gem 'sqlite3'
 
-gem 'faker', '~> 2.13' #Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', require: false
+
+#gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jquery-rails', '~> 4.4'
+gem 'cancancan'
 gem 'popper_js', '~> 1.16'
-
-
-
+gem 'bootstrap', '~> 4.5.0'
+#gem 'solargraph', '~> 0.39.12'
 
 
 
@@ -47,6 +50,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0', '>= 4.0.1' #rspec-rails is a testing framework for Rails 5+.
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5' #Extracting `assigns` and `assert_template` from ActionDispatch.
   gem 'factory_bot_rails', '~> 6.1' #factory_bot_rails provides integration between factory_bot and rails 5.0 or newer
+  gem 'faker' ,'~> 2.13' #Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
+  gem 'cowsay','~> 0.3.0' #ASCII art avatars emote your messages
+  gem "nyan-cat-formatter"
 
 
 end
